@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "21978703697",
+    "project_id": "vehiclefootprint",
+    "storage_bucket": "vehiclefootprint.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21978703697:android:98998b9b87bc86eb081570",
+        "android_client_info": {
+          "package_name": "com.example.vehiclefootprint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21978703697-uefp19ddna5abhisvvnh78ssnmobr407.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG2HQJ34IeUH36CR5LIS2Bbmh2g-GAVUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21978703697-uefp19ddna5abhisvvnh78ssnmobr407.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

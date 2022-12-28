@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="spinnerItems">
+        <item>Select Autority Type..</item>
+        <item>RTO</item>
+
+    </string-array>
+</resources>

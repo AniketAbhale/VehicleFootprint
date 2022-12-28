@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/prev"
+    tools:context=".getprevdata">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="98dp"
+            android:fontFamily="@font/audiowide"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:layout_marginRight="7dp"
+            android:text="Previous Owners"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:gravity="center"
+            android:fontFamily="@font/audiowide"
+            android:layout_marginLeft="7dp"
+            android:text="Enter Registration Number"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="MH04XX1234"
+            android:id="@+id/vehiclenu"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="textCapCharacters"
+                android:layout_height="wrap_content"/></com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle5"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/ptv1"
+            android:fontFamily="@font/audiowide"
+            android:layout_marginTop="20dp"
+            android:text="Previous Owner: "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/ntv2"
+            android:fontFamily="@font/audiowide"
+            android:layout_marginTop="20dp"
+            android:text="New Owner: "/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/audiowide"
+            android:layout_marginTop="40dp"
+            android:text="Search"
+            android:onClick="search"
+            android:textColor="@color/white"
+            android:background="@drawable/buttonstyle5"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/audiowide"
+            android:layout_marginTop="20dp"
+            android:onClick="back"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:background="@drawable/buttonstyle5"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/spbg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/audiowide"
+        android:layout_marginLeft="7dp"
+    android:gravity="center"
+
+
+        android:layout_marginRight="7dp"
+        android:text="Vehicle\nFootprint"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/button3"
+    android:layout_width="100dp"
+    android:onClick="next"
+
+    android:background="@drawable/buttonstyle4"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|bottom"
+    android:textColor="@color/black"
+    android:fontFamily="@font/audiowide"
+    android:gravity="center_vertical|center_horizontal"
+    android:textSize="13dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="618dp"
+    android:text="Let's Go" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

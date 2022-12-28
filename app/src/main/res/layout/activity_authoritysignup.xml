@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signbg"
+
+    tools:context=".Authoritysignup">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/audiowide"
+            android:gravity="center"
+            android:text="SignUp"
+            android:textColor="@color/white"
+            android:textSize="38dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/name"
+                android:hint="Full Name"
+                app:hintTextColor="@color/black"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content"/></com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:hint="Email"
+                android:id="@+id/email"
+                app:hintTextColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="wrap_content"/></com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:hint="Phone Number"
+                android:id="@+id/phone"
+                app:hintTextColor="@color/black"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:inputType="phone"
+                    android:layout_height="wrap_content"/></com.google.android.material.textfield.TextInputLayout>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:drawSelectorOnTop="true"
+
+                android:spinnerMode="dropdown"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinnerbg"
+                android:entries="@array/spinnerItems"
+                android:layout_height="60dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:hint="UID"
+                app:hintTextColor="@color/black"
+                android:id="@+id/uid"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:background="@color/white"
+                    android:maxLength="12"
+                    android:textColor="@color/black"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"/></com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:hint="Password"
+                app:hintTextColor="@color/black"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:id="@+id/password"
+                app:passwordToggleEnabled="true"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:background="@color/white"
+                    android:inputType="textPassword"
+                    android:layout_height="wrap_content"/></com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GO"
+                android:id="@+id/go"
+
+                android:onClick="go"
+                android:fontFamily="@font/audiowide"
+                android:background="@drawable/buttonstyle"
+                android:textColor="@color/white"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/loginbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:elevation="0dp"
+                android:fontFamily="@font/audiowide"
+                android:onClick="back"
+                android:text="ALREADY HAVE AN ACCOUNT? LOGIN"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:text="*By signing up you agree to our privacy policy and terms and conditions."
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</ScrollView>
